@@ -1,14 +1,84 @@
-body{background-color: rgb(223, 240, 191);}
-p{
-font-size: 20px;
-font-style: normal;
-font-family: 'Times New Roman', Times, serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
-h1{font-size: 70px;
+body{
+    min-height: 100vh;
+background-image: url(vecteezy_dark-background-random-minimalist-abstract-illustration_10825735.jpg);
+background-size: cover;
+background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    }
+    
+.navbar a {
+    position: relative;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+p{
+    color: #fff;
+    bottom: 20px;
+    font-size: 25px;
     font-style: normal;
-    font-family: 'Times New Roman', Times, serif;}
-    h1{ text-align: center;Сучасні професії} 
+    font-family: "Montserrat", sans-serif;
+    width: 950px; text-align: justify;
+}
+h2{
+    color: #fff;
+    bottom: 20px;
+    font-size: 25px;
+    font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    width: 950px; text-align: justify;
+}
+
+h1{
+    color: #fff;
+    bottom: 20px;
+    font-size: 80px;
+    font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;Сучасні професії
+}
+
 .vir{width: 800px; text-align: justify;}
-ul{font-size: 30px;
-    font-style: normal;
-    font-family: 'Times New Roman', Times, serif;}
